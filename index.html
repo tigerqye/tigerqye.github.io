@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tiger Ye</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <input type="text" value="t28ye@uwaterloo.ca" id="emailAddress">
+    <div class="container" style="overflow: visible; height: 100px;">
+      <div id="logo">
+        <h1>Tiger Ye</h1>
+      </div>
+      <div id="navbar">
+        <ul>
+          <li class="largescreen"><a id="email" onclick="copyEmail()">Email</a></li>
+          <li class="largescreen"><a href="https://www.linkedin.com/in/tiger-ye-2999221b5/" target="_blank">LinkedIn</a></li>
+          <li class="largescreen"><a href="https://github.com/tigerqye" target="_blank">GitHub</a></li>
+          <li class="largescreen"><a href="https://grabcad.com/tiger.ye-1" target="_blank">GrabCAD</a></li>
+          <li class="largescreen"><a href="assets/Tiger_Ye_Resume.pdf" target="_blank">Resume</a></li>
+          <li class="largescreen"><a href="assets/Portfolio.pdf" target="_blank">Portfolio</a></li>
+          <li class="smallscreen">
+            <a id="menu" onclick="openMenu()" target="_blank">
+              <div class="menubar"></div>
+              <div class="menubar"></div>
+              <div class="menubar"></div>
+            </a>
+          </li>
+        </ul>
+        <ul id="smallmenu">
+          <li class="smallscreen"><a id="email" onclick="copyEmail()">Email</a></li>
+          <li class="smallscreen"><a href="https://www.linkedin.com/in/tiger-ye-2999221b5/" target="_blank">LinkedIn</a></li>
+          <li class="smallscreen"><a href="https://github.com/tigerqye" target="_blank">GitHub</a></li>
+          <li class="smallscreen"><a href="https://grabcad.com/tiger.ye-1" target="_blank">GrabCAD</a></li>
+          <li class="smallscreen"><a href="assets/Tiger_Ye_Resume.pdf" target="_blank">Resume</a></li>
+          <li class="smallscreen"><a href="assets/Portfolio.pdf" target="_blank">Portfolio</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="container flex">
+      <div class="imageText">
+        <div class="inside_container">
+          <img src="assets/smallerDSC00653.PNG" style="width: 100%;" alt="profile">
+        </div>
+        <div class="inside_container">
+          <h1>ABOUT</h1>
+          <p>Hi my name is Tiger Ye! Currently I am an undergraduate student studying Mechatronics Engineering at the University of Waterloo. My passion is in CAD work, however I love to branch out occasionally into other fields such as programming and circuit design.</p>
+          <p>At this very moment I am in my 2A term in Mechatronics and looking for work during for the winter term. I hope that you will consider me for your company!</p>
+        </div>
+      </div>
+    </div>
+    <div class="container flex" style="overflow: visible;">
+      <div class="inside_container" style="width: 100%; overflow: visible; padding-top: 0px; padding-bottom: 0px;">
+        <h1 style="margin-bottom: 0px;">SKILLS</h1>
+        <img class="center" style="margin-top: -10px; margin-bottom: -150px;" src="assets/wordcloud.svg" alt="wordcloud">
+      </div>
+    </div>
+    <div class="container flex">
+      <div class="inside_container">
+        <h1>EXPERIENCE</h1>
+        <div class="imageText">
+          <img src="assets/virtamove.png" style="max-width: 50%;" class="padding" alt="profile">
+          <div class="inside_container">
+            <h2>VirtaMove Software Developer</h2>
+            <p class="dates">May 2021 - Aug 2021</p>
+            <p>This was my very first coop! VirtaMove is a company that creates software to migrate server applications to new cloud or datacenter servers. Their main 2 products are V-migrate, a 1 to 1 migration application and VirtaMaestro an online multi-migration application.</p>
+            <p>One of new things I learned was Robot Framework an automation framework. I programmed Robot Framework scripts for the IIS migration on V-migrate and the migration of IIS through Maestro. Additionally I was able implement alot of new features on their Maestro product. I wrote C# code to code to export backend data to csv files and pdf reports for use by users. Additionally I created the entirely new Help Center menu for user help. This included implementing links to documentation, support tickets and a page inspector tool which would show the user all the important page components and what they do.</p>
+          </div>
+        </div>
+        <div class="imageText">
+          <div class="inside_container">
+            <h2>FRC - First Robotics Competition</h2>
+            <p class="dates">Sep 2018 - Jun 2020</p>
+            <p>FRC has been my gateway into a variety of hands on skills such as using drill presses, band saws, milling machines and much, much more. FRC taught me how to apply the theoretical knowledge I learned in classrooms to part design and manufacturing.</p>
+            <p>My role in team 1246 (our FRC team) was overall/design lead and thus I was responsible for integrating other designers CAD models into the final design and providing tasks for members of the team. Some of my design tasks included designing the elevator, powercell (balls) storage system and the hooking mechanism for the climb.</p>
+            <p>Probably one of my proudest achievements was using Fusion 360 to design a mechanical single use hook for 2020 FRC robot. A single use hook was needed to ensure the elevator would not descend during the power off period at the end of the game. The key component of the mechanism is the spring that was used such that no electrical components were required to latch on to the elevator.</p> 
+          </div>
+          <img src="assets/frcrobot.png" style="max-width: 50%;" class="padding" alt="profile">
+        </div>
+        <div class="imageText">
+          <img src="assets/midnightsun.png" style="max-width: 50%;" class="padding" alt="profile">
+          <div class="inside_container">
+            <h2>Midnight Sun - UW Solar Car Team</h2>
+            <p class="dates">Feb 2021 - Present</p>
+            <p>Midnight Sun was the natural continuation after FRC. At Midnight Sun I am mostly involved with designing SOLIDWORKS components such as mounting hardware and snap covers for the battery box, the door handle mechanism for locking and opening the solar car and adding other miscellaneous hardware to the assembly.</p>
+          </div>
+        </div>
+        <div class="imageText">
+          <div class="inside_container">
+            <h2>Toronto Pan Am Sports Centre Maintenance Worker</h2>
+            <p class="dates">Jul 2017 - Aug 2017</p>
+            <p>Over the summer of 2017 I was a maintenance worker for the Toronto Pan Am Sports Center.Some of my duties included working with senior co-workers to inspect the roof of the Pan Am Sports Centre and look for leaks or possible damages. Some days I would help out with spreading wood chips around the south-end trees. One time I even helped them excavate the ground to search for a broken wire that prevented one of the lamps from turning on.</p>
+          </div>
+          <img src="assets/tpsc.png" style="max-width: 50%;" class="padding" alt="profile">
+        </div>
+      </div>
+    </div>
+    <div id="projects" style="display: flex;">
+      <!--<div class="container" style="padding-left: 20px;">
+        <h1>PROJECTS</h1>
+      </div>-->
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <div class="container" style="height: 100%; overflow: visible;">
+          <div class="mySlides">
+            <div class="inside_container">
+              <h1>Computer Mouse Body</h1>
+              <p>Used Solidworks form tools to design an original sleek and ergonomic computer mouse body to be 3D printed. Constraints included designing around a circuit board from a separate mouse and designing for 3D printability. The final result is the mouse I use to this day! Check out the CAD files <a href="https://grabcad.com/library/computer-mouse-85" target="_blank" class="link">here</a>!</p>
+            </div>
+            <img src="assets/computer_mouse.png" style="max-width: 50%;" alt="profile">
+          </div>
+        
+          <div class="mySlides">
+            <img src="assets/chatapp.png" style="width: 35%;" alt="profile">
+            <div class="inside_container">
+              <h1>Chat App</h1>
+              <p>Using node.js and jQuery created an online chatroom application in which the use can input a name and channel and be directed to the specific channel. The communication between machines is done though the use of the Ably Realtime API while the application is hosted on Heroku. Check out the application <a href="https://chatapp12309984.herokuapp.com/" target="_blank" class="link">here</a>!</p>
+            </div>
+          </div>
+        
+          <div class="mySlides">
+            <div class="inside_container">
+              <h1>Conveyor Assembly</h1>
+              <p>Used Solidworks and imported CAD models from McMaster-Carr to create a large modular conveyor assembly with sorting abilities. The conveyor was designed with the specifications of needing to transport 20x20x20cm and 10x10x30cm boxes with a max weight of 8.48kg. Check out the CAD files <a href="https://grabcad.com/library/modular-conveyor-system-with-sorting-1" target="_blank" class="link">here</a>!</p>
+            </div>
+            <img src="assets/conveyor.png" style="max-width: 50%;" alt="profile">
+          </div>
+            
+          <div class="mySlides">
+            <div class="inside_container">
+              <h1>Fine Tuned</h1>
+              <p>Designed a webpage that edits user uploaded images based on song choice for Hack the North. Contrast, brightness and more will be adjusted to the tone of music inputted generating a unique aesthetic for your favourite songs. Check out the code for it <a href="https://github.com/ryli123/finetuned" target="_blank" class="link">here</a>!</p>
+            </div>
+            <img src="assets/finetuned.png" style="max-width: 50%;" alt="profile">
+          </div>
+        
+          <div class="mySlides">
+            <div class="inside_container">
+              <h1>Cover Letter Template Generator</h1>
+              <p>Setting up a cover letter can be tedious and time consuming leaving less time to actually express yourself through the letter. That is why I wrote a python script using Selenium that goes to WaterlooWorks and gets all the relevant information on a cover letter such as company name, postal code and more. It then uses Python-docx to write to a premade template Word document and saves it to a separate folder. Check out the code for it <a href="https://github.com/tigerqye/Cover_Letter_Generator" target="_blank" class="link">here</a>!</p>
+            </div>
+            <img src="assets/coverletter.png" style="max-width: 50%;" alt="profile">  
+          </div>
+
+          <div class="mySlides">
+            <div class="inside_container">
+              <h1>Least Torque Calculator</h1>
+              <p>Wrote a C++ script to determine the 3 link lengths that produce the least torque of a three-degree-of-freedom (DOF) planar serial robotic manipulator arm given 3 final link positions and angle w.r.t the x-axis. The code iterated through all combinations of arm lengths from 1 to 1000 meters to find the combination that gave the least combined torque of the 3 positions. The code can be found <a href="https://github.com/tigerqye/119ManipulatorProject" target="_blank" class="link">here</a>! And if you are really interested the report can be found <a href="/assets/Group_66_MTE_119_Manipulator_Design_Project_Winter_2021.pdf" target="_blank" class="link">here</a>.</p>
+            </div> 
+            <img src="assets/119arm.png" style="max-width: 40%;" alt="profile"> 
+          </div>
+
+        </div>
+    </div>
+    <div class="container flex">
+      <div class="inside_container">
+        <h1>INTERESTS</h1>
+        <p>Here's just some facts about me if you want to get to know me better.</p>
+        <ul>
+          <li>I'm 1.92m, that's pretty tall! All I'm saying is it could come in pretty handy when reaching for tall objects.</li>
+          <li>I like to play chess. Well, I mostly just play tactics now but I am always up for a chess match. I managed a 2181 tactics rating on Chess.com but I'm not that good when it comes to playing matches.</li>
+          <li>I play ultimate frisbee and like to run long distance. I even made it to OFSAA once for cross country running! You can check out my placement here!. Or don't, and just pretend I got first.</li>
+          <li>If you couldn't tell from some of my projects I love to 3D print! I have an Ender 3 Pro at home and love to think of new and interesting things to design and print.</li>
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

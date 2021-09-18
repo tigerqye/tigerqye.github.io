@@ -1,0 +1,98 @@
+GrabCAD Workbench
+GrabCAD Workbench
+HTML
+HTML
+HTML
+Selenium
+Selenium
+Selenium
+Drill Press 
+Drill Press 
+Spotify API
+Spotify API
+Python
+Python
+Python
+Python
+Ably Realtime
+Ably Realtime
+SOLIDWORKS
+SOLIDWORKS
+SOLIDWORKS
+SOLIDWORKS
+SOLIDWORKS
+Fusion 360
+Fusion 360
+Fusion 360
+Fusion 360
+jQuery
+jQuery
+Java
+Java
+Java
+Robot Framework
+Robot Framework
+Robot Framework
+Inventor
+Inventor
+TinkerCAD
+TinkerCAD
+MS Office Suite
+MS Office Suite
+MS Office Suite
+Cura
+Cura
+C#
+C#
+C#
+C++
+C++
+C++
+C++
+Photoshop
+Photoshop
+AutoCAD
+AutoCAD
+AutoCAD
+GrabCAD Print
+GrabCAD Print
+CSS
+CSS
+CSS
+JavaScript
+JavaScript
+JavaScript
+Node.js
+Node.js
+Python-docx
+Python-docx
+Heroku
+Heroku
+Github
+Github
+git
+git
+git
+Communication
+Communication
+Teamwork
+Teamwork
+CAD
+CAD
+CAD
+Stress Simulations
+Stress Simulations
+Perseverance
+Perseverance
+Curiosity
+Curiosity
+Leadership
+Leadership
+Problem-solving
+Problem-solving
+VBA
+VBA
+Confluence
+Confluence
+Trello
+Trello

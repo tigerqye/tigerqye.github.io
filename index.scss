@@ -1,0 +1,290 @@
+$theme_color1: #393B79;
+
+@keyframes rotate {
+    0% {height: 50px; width: 50px;}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes left_slide {
+    0% {transform: translate(-100px);}
+    100% {transform: translate(0px); opacity: 100%;}
+}
+
+@keyframes right_slide {
+    0% {transform: translate(100px);}
+    100% {transform: translate(0px); opacity: 100%;}
+}
+
+@keyframes drop_down {
+    0% {width: 0px; visibility: visible;}
+    100% {width: calc(100% - 100px); visibility: visible;}
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+.link {
+    color: #FFE578;
+}
+
+.container {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.inside_container {
+    padding: 20px;
+    line-height: 1.6em;
+}
+
+#logo {
+    background-color: black;
+    float: left;
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    font-size: large;
+    animation-name: rotate;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+
+    h1 {
+        position: relative;
+        opacity: 0%;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        animation-name: left_slide;
+        animation-duration: 500ms;
+        animation-delay: 500ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+#emailAddress {
+    position: absolute;
+    top: -200px;
+}
+
+#navbar {
+    background-color: $theme_color1;
+    float: left;
+    height: 60px;
+    width: 0%;
+    visibility: hidden;
+    margin-bottom: 40px;
+    animation-name: drop_down;
+    animation-duration: 1000ms;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
+
+    ul:first-child{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        font-size: 16px;
+        visibility: inherit;
+
+        > li {
+            background-color: inherit;
+            visibility: inherit;
+            padding-left: 30px;
+            padding-right: 30px;
+    
+            > a {
+                color: white;
+                text-decoration: none;
+                opacity: 0%;
+                animation-name: left_slide;
+                animation-duration: 500ms;
+                animation-delay: 1500ms;
+                animation-fill-mode: forwards;
+                padding-bottom: 10px;
+                border-bottom: hidden $theme_color1 4px;
+                transition: 100ms;
+                cursor: pointer;
+    
+                &:hover {
+                    border-bottom: solid white 4px;
+                }
+            }
+        }
+    }
+
+    ul:last-child {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: $theme_color1;
+        opacity: 90%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        font-size: 16px;
+        visibility: inherit;
+
+        > li {
+            background-color: inherit;
+            visibility: inherit;
+            padding-top: 20px;
+            padding-bottom: 20px;
+    
+            > a {
+                color: white;
+                text-decoration: none;
+                padding-bottom: 10px;
+                border-bottom: hidden $theme_color1 4px;
+                transition: 100ms;
+                cursor: pointer;
+
+                &:hover {
+                    border-bottom: solid white 4px;
+                }
+            }
+        }
+    }
+}
+
+#projects {
+    min-height: 600px;
+    width: 100%;
+    background-color: $theme_color1;
+    color: white;
+    line-height: 1.6em;
+    position: relative;
+}
+
+#skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.prev {
+    position: absolute;
+    cursor: pointer;
+    font-size: 50px;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: 500ms;
+
+    &:hover {
+        transform: translate(10px, -50%);
+    }
+}
+
+.next {
+    position: absolute;
+    cursor: pointer;
+    font-size: 50px;
+    right: 10px;
+    top: 50%; 
+    transform: translate(0, -50%);
+    transition: 500ms;
+
+    &:hover {
+        transform: translate(-10px, -50%);
+    }
+}
+
+.mySlides {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    opacity: 0%;
+    animation-name: left_slide;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    overflow: visible;
+}
+
+.imageText {
+    display: inline-flex;
+    align-items: center;
+}
+
+.small {
+    margin: 0;
+    font-size: 20px;
+    padding: 1px;
+    font-weight: 300;
+    color: grey;
+}
+
+.medium {
+    margin: 0;
+    font-size: 30px;
+    padding: 3px;
+    font-weight: 500;
+    color: rgb(73, 73, 73);
+}
+
+.large {
+    margin: 0;
+    font-size: 40px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.center {
+    position: relative;
+    top: 50%;
+    left: calc(50% - 40px);
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.dates {
+    font-size: 15px;
+    color: grey;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.menubar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.smallscreen {
+    display: none;
+}
+
+.largescreen {
+    display: initial;
+}
+
+@media screen and (max-width: 1000px){
+    .imageText {
+        flex-direction: column;
+    }
+    .mySlides {
+        flex-direction: column;
+    }
+    .largescreen {
+        display: none;
+    }
+    .smallscreen {
+        display: initial;
+    }
+}
