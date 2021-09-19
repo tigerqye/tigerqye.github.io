@@ -131,7 +131,7 @@ body{
         flex-direction: column;
         background-color: $theme_color1;
         opacity: 90%;
-        display: flex;
+        display: none;
         justify-content: flex-end;
         align-items: center;
         list-style: none;
@@ -167,6 +167,12 @@ body{
     color: white;
     line-height: 1.6em;
     position: relative;
+}
+
+#projectstitle {
+    position: absolute;
+    top: 20px;
+    left: calc(10% + 20px);
 }
 
 #skills {
