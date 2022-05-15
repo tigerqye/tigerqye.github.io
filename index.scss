@@ -1,8 +1,8 @@
 $theme_color1: #393B79;
 
 @keyframes rotate {
-    0% {height: 50px; width: 50px;}
-    100% {transform: rotate(360deg);}
+    0% {height: 50px; width: 50px; border-width: 120px; background-color: black;}
+    100% {transform: rotate(360deg); border-width: 10px; background-color: white;}
 }
 
 @keyframes left_slide {
@@ -17,7 +17,7 @@ $theme_color1: #393B79;
 
 @keyframes drop_down {
     0% {width: 0px; visibility: visible;}
-    100% {width: calc(100% - 100px); visibility: visible;}
+    100% {width: calc(100% - 120px); visibility: visible;}
 }
 
 body{
@@ -26,7 +26,8 @@ body{
 }
 
 .link {
-    color: #FFE578;
+    color: white;
+    font-weight: bold;
 }
 
 .container {
@@ -45,13 +46,16 @@ body{
 }
 
 #logo {
-    background-color: black;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
     float: left;
     height: 100px;
     width: 100px;
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     overflow: hidden;
     font-size: large;
     animation-name: rotate;
@@ -76,11 +80,12 @@ body{
 }
 
 #navbar {
-    background-color: $theme_color1;
+    background-color: white;
     float: left;
-    height: 60px;
+    height: 120px;
     width: 0%;
     visibility: hidden;
+    font-weight: bold;
     margin-bottom: 40px;
     animation-name: drop_down;
     animation-duration: 1000ms;
@@ -95,7 +100,7 @@ body{
         justify-content: flex-end;
         align-items: center;
         list-style: none;
-        font-size: 16px;
+        font-size: 20px;
         visibility: inherit;
 
         > li {
@@ -105,7 +110,7 @@ body{
             padding-right: 30px;
     
             > a {
-                color: white;
+                color: black;
                 text-decoration: none;
                 opacity: 0%;
                 animation-name: left_slide;
@@ -118,7 +123,7 @@ body{
                 cursor: pointer;
     
                 &:hover {
-                    border-bottom: solid white 4px;
+                    border-bottom: solid black 4px;
                 }
             }
         }
@@ -129,7 +134,7 @@ body{
         margin: 0;
         width: 100%;
         flex-direction: column;
-        background-color: $theme_color1;
+        background-color: white;
         opacity: 90%;
         display: none;
         justify-content: flex-end;
@@ -145,10 +150,10 @@ body{
             padding-bottom: 20px;
     
             > a {
-                color: white;
+                color: black;
                 text-decoration: none;
                 padding-bottom: 10px;
-                border-bottom: hidden $theme_color1 4px;
+                border-bottom: hidden white 4px;
                 transition: 100ms;
                 cursor: pointer;
 
@@ -268,7 +273,7 @@ body{
 .menubar {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: black;
     margin: 6px 0;
 }
 
