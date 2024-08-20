@@ -1,0 +1,290 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Ye</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+
+  <div class="square">
+    <div class="navbar">
+      <div class="sections">
+        <a href="#" onclick="openPage('about', this)" class="active">About</a>
+        <a href="#" onclick="openPage('resume', this)">Resume</a>
+        <a href="#" onclick="openPage('portfolio', this)">Portfolio</a>
+        <!-- <a href="#" onclick="openPage('me', this)">me</a> -->
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/tigerye/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" id="copyLink"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div id="notification"></div>
+
+    <div class="content" id="about">
+      <div class="container">
+        <div class="profile-picture">
+          <img src="assets/me_pic.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-details">
+          <h2>Tiger Ye</h2>
+          <p>Hi! I'm Tiger a Mechatronics Engineering student from the University of Waterloo. I specialize ASIC design and digital verification using UVM. I also sometimes like to tinker with electrical and mechanical design on the side. Currently looking for full time positions after graduation. If you think I would be a good fit send me an email!</p>
+        </div>
+      </div>
+      <h2>Work Experience</h2>
+      <h4>Marvell | Digital Design Verification</h4>
+      <h5>Jan 2024 - Aug 2024</h5>
+      <h4>ArchES Computing | FPGA Design Engineer</h4>
+      <h5>May 2023 - Aug 2023</h5>
+      <h4>VN Instruments | R&D Associate</h4>
+      <h5>Sep 2022 - Dec 2022</h5>
+      <h4>AutoMotionShade | R&D Engineer</h4>
+      <h5>Jan 2022 - Apr 2022</h5>
+      <h4>VirtaMove | Software Developer</h4>
+      <h5>May 2021 - Aug 2021</h5>
+    </div>
+
+    <div class="content" id="resume">
+      <h2>Resume</h2>
+      <h3>Tiger Ye</h3>
+      <hr>
+      <h3>Education</h3>
+      <p>Bachelor of Mechatronics Engineering</p>
+      <p>University of Waterloo, 2025</p>
+      <hr>
+      <h3>Skills</h3>
+      <ul>
+        <li>Software: Verilog, System Verilog, C++, Python, Java, Git, MATLAB, C#, C, TCL</li>
+        <li>Other: UVM, Arduino, LT Spice, PCIe Spec, Vivado, Selenium, Microsoft Office, Confluence</li>
+      </ul>
+      <hr>
+      <h3>Work Experience</h3>
+      <div class="job">
+        <img src="assets/marvell.jpg" alt="marvell">
+        <div class="job-text">
+          <h4>Marvell Technology | Digital Design Verification</h4>
+          <h5>Jan 2024 - Aug 2024</h5>
+          <b>Responsibilities</b>
+          <ul>
+            <li>Improved and updated testbenches to better comply with UVM standards and changes in chip architecture.</li>
+            <li>Identified and resolved regression failures by analyzing logfiles and waveform data.</li>
+            <li>Completed PCIe MindShare course, gaining in-depth understanding of PCIe specification, specifically 6.0.</li>
+          </ul>
+          <b>Register Field Comparison Script</b>
+          <ul>
+            <li>Developed Python script to compare 3rd-party HTML registers with company files, identifying discrepancies.</li>
+            <li>Implemented capability walk functionality to identify and verify PCIe capability structure with expected.</li>
+          </ul>
+          <b>PCIe 6.0 L0p UVM Test Sequence</b>
+          <ul>
+            <li>Designed and tested L0p UVM sequence to verify entry into L0p for different lane widths and conditions.</li>
+            <li>Gained in-depth knowledge of L0p specifications and edge cases, which were each thoroughly covered.</li>
+            <li>Debugged testbench failures using transaction logfiles to determine if issue was RTL or VIP related.</li>
+          </ul>
+        </div>   
+      </div>
+      <div class="job">
+        <img src="assets/arches.png" alt="arches">
+        <div class="job-text">
+          <h4>ArchES Computing | FPGA Design Engineer</h4>
+          <h5>May 2023 - Aug 2023</h5>
+          <b>Responsibilities</b>
+          <ul>
+            <li>Upgraded FPGA Test Platform to support multiple SFPs, send IGMP join requests, and respond to ICMP and ARP.</li>
+            <li>Migrated legacy platforms to new shell system, enabling uninterrupted operation while being reprogrammed.</li>
+            <li>Created unit tests for new and existing modules such as the width conversion, statistics, and network modules.</li>
+          </ul>
+          <b>AXI4-Stream Width Conversion Module</b>
+          <ul>
+            <li>Iterated through multiple width conversion algorithms to find the most resource efficient solution.</li>
+            <li>Analyzed synthesized schematic to identify and fix unintended areas of high resource usage resulting from HLS.</li>
+            <li>Developed an highly efficient width conversion module in C++ using bit-shifting and template recursion.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <img src="assets/vn_instruments.jpg" alt="vn_instruments">
+        <div class="job-text">
+          <h4>VN Instruments | R&D Associate</h4>
+          <h5>Sep 2022 - Dec 2022</h5>
+          <b>Responsibilities</b>
+          <ul>
+            <li>Designed a custom 80V power module PCB in KiCAD and fabricated an enclosure for it using Fusion 360.</li>
+            <li>Used LT Spice to model voltage regulators and debug issues involving start-up voltage.</li>
+            <li>Wrote Python and TCL scripts to generate pin settings based on csv files and automatically synthesize designs.</li>
+          </ul>
+          <b>Custom Communication Protocol for FPGA Data Synchronization</b>
+          <ul>
+            <li>Developed System Verilog code for precise transfer of timestamp data between FPGAs using 3 signal lines.</li>
+            <li>Debugged data bus issues between FPGA and microcontroller communication using oscilloscope and voltmeter.</li>
+            <li>Wrote comprehensive System Verilog testbenches to ensure designs met functionality and timing requirements.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <img src="assets/automotionshade.png" alt="automotionshade">
+        <div class="job-text">
+          <h4>AutoMotionShade | R&D Engineer</h4>
+          <h5>Jan 2022 - Apr 2022</h5>
+          <b>Responsibilities</b>
+          <ul>
+            <li>Led SOLIDWORKS PDM integration project, researched and contacted resellers before presenting findings.</li>
+            <li>Wrote Python scripts such as an inventory updater and work instruction modifier to increase efficiency.</li>
+          </ul>
+          <b>Rear Door Canvas Design</b>
+          <ul>
+            <li>Designed and tested rear door canvas to comply with client’s requirement of a 20 lbs force for emergency egress.</li>
+            <li>Created engineering drawings in SOLIDWORKS and worked with manufacturers to fabricate canvas.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <img src="assets/virtamove.png" alt="virtamove">
+        <div class="job-text">
+          <h4>VirtaMove | Software Developer</h4>
+          <h5>May 2021 - Aug 2021</h5>
+          <b>Responsibilities</b>
+          <ul>
+            <li>Developed help center in JavaScript for identifying page components and providing help for new users.</li>
+            <li>Wrote test scripts for product use cases in Python using Robot Framework.</li>
+            <li>Exported backend data to csv files and generated reports based on said data.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="assets/ultrasonic_sensor.png" alt="ultrasonic_sensor">
+          <h3>Ultrasonic Measuring Instrument</h3>
+          <p>Designed and created device to measure distance based on ultrasonic pulses</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="project">
+          <img src="assets/battery_module.png" alt="battery_module">
+          <h3>Battery Module</h3>
+          <p>Designed a 4s8p battery module for Midnight Sun solar car team using 21700 sized lithium-ion cells</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <!-- <div class="project">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Project Title 3</h3>
+          <p>Description of Project 2</p>
+          <a href="#" class="btn">View Details</a>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="content" id="me">
+      <h2>me</h2>
+      <p>If you're looking at this section then that must mean you are interested in me! This section has some things about me that
+          don't really relate to work experience but could help you get an idea of who I am as a person.</p>
+      <div class="hobby">
+      <img src="hobby1.jpg" alt="Hobby 1">
+      <h3>Crippling League Addiction</h3>
+      <p>I don't play any other games. This is the only game I play. Started in season 5 and have been in and out of rehab for about 3 years. Mainly play Thresh.</p>
+    </div>
+
+    <div class="hobby">
+      <img src="hobby2.jpg" alt="Hobby 2">
+      <h3>Bouldering</h3>
+      <p>Climbing things is pretty fun. Currently at a V3 ish level but I feel that I might've peaked :/</p>
+    </div>
+
+    <div class="hobby">
+      <img src="assets/xc.jpg" alt="xc">
+      <h3>Running</h3>
+      <p>I like running, specifically long distance. I was pretty good at it too. Peaked in grade 9 when I made OFSAA (provincial level competition) and it has been downhill ever since. I still enjoy it as a hobby though. Look at how happy I am in that image. </p>
+    </div>
+
+    <div class="hobby">
+      <img src="assets/disc.jpg" alt="disc">
+      <h3>Ultimate</h3>
+      <p>Reading is a hobby that I've cherished since childhood. I enjoy diving into different worlds, learning new things, and expanding my imagination through books.</p>
+    </div>
+    </div>
+    <button id="getPDF"><i class="fa-solid fa-file-pdf"></i></button>
+  </div>
+
+  <!-- Loading screen -->
+  <div class="loading-container">
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    // Simulate loading time (you can replace this with actual loading code)
+    setTimeout(function() {
+      // Hide loading screen and show content
+      document.querySelector('.loading-container').classList.add('hide');
+      document.querySelectorAll('.content')[0].classList.add('show'); // Show the first content
+    }, 500); // Change the time value as needed
+
+    function openPage(pageName, element) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("show"); // Hide all content
+        document.getElementById("getPDF").style.display = "none";
+      }
+      document.getElementById(pageName).classList.add("show"); // Show the selected content
+
+      if(pageName == "resume" || pageName == "portfolio") {
+        const getpdf = document.getElementById("getPDF");
+        getpdf.style.display = "block"; // Show the selected content
+        if(pageName == "resume") {
+          getpdf.setAttribute('onclick', 'window.open("assets/Tiger_Ye_Resume.pdf", "_blank")');
+        }
+        else if(pageName == "portfolio") {
+          getpdf.setAttribute('onclick', 'window.open("assets/Projects_Portfolio.pdf", "_blank")');
+        }
+        
+      }
+      
+      // Remove 'active' class from all links
+      tablinks = document.getElementsByClassName("navbar")[0].getElementsByTagName("a");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      
+      // Add 'active' class to the clicked link
+      element.classList.add("active");
+    }
+
+    document.getElementById('copyLink').addEventListener('click', function(event) {
+      event.preventDefault();
+
+      const email = 't28ye@uwaterloo.ca'; // Change this to your email address
+      copyToClipboard(email);
+    });
+
+    function copyToClipboard(text) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+
+      // Show notification
+      const notification = document.getElementById('notification');
+      notification.textContent = 'Email copied to clipboard: ' + text;
+      notification.style.opacity = 1;
+
+      // Hide notification after 2 seconds
+      setTimeout(function() {
+        notification.style.opacity = 0;
+      }, 1200);
+    }
+
+    // Show the home page by default
+    openPage('home', document.getElementsByClassName("navbar")[0].getElementsByTagName("a")[0]);
+  </script>
+
+  </body>
+  </html>
