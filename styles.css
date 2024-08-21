@@ -40,6 +40,13 @@ body {
     margin-top: 40px;
 }
 
+@media (max-width: 900px) {
+    .square {
+        width: 90%;
+        height: 90%;
+    }
+}
+
 .navbar {
   position: sticky;
   top: 0px;
@@ -48,6 +55,15 @@ body {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.name {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
 .navbar a {
@@ -243,6 +259,12 @@ a:hover {
   margin-right: auto;
 }
 
+@media (max-width: 900px) {
+    .job-text {
+        width: 90%;
+    }
+}
+
 .job img {
   display: block;
   width: 200px; /* Ensure images don't exceed container width */
@@ -269,6 +291,13 @@ a:hover {
 
 #getPDF:hover {
   background-color: #555; /* Darker blue */
+}
+
+@media (max-width: 900px) {
+    #getPDF {
+        bottom: 5%;
+        right: 5%;
+    }
 }
 
 #notification {
