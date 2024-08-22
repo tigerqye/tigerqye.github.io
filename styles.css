@@ -55,6 +55,7 @@ body {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .name {
@@ -69,7 +70,7 @@ body {
 
 .navbar a {
   float: left;
-  display: block;
+  display: inline-flex;
   color: #fff;
   text-align: center;
   padding: 14px 20px;
@@ -91,13 +92,13 @@ body {
 }
 
 .sections {
-  display: flex;
+  display: block;
   align-items: flex-start; /* Align items vertically */
 }
 
 .social-icons {
   display: flex;
-  align-items: flex-end; /* Align items vertically */
+  align-items: flex-end;
 }
 
 header {
